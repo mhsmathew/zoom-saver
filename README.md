@@ -1,20 +1,24 @@
 
+
 ## Inspiration
 
-Since the dawn of Zoom university and using our computer's webcam to engage in our classes, many people have been struck by the unfortunate situation of being embarrassed by an inopportune moment where they forgot their camera was on during class. Although (thankfully) this has not happened to me, just the anxiety of such an event has made me anxious whenever I connect to a class.
+Since the dawn of Zoom university and using our computer's webcam to engage in our classes, many people have been struck by the unfortunate situation of being embarrassed by an inopportune moment where they forgot their camera was on during class. Although (thankfully) this has not happened to me, just the anxiety of such an event has made me anxious whenever I connect to a class. This paired with the looming threat of hackers looking through our camera, I created this tool to mitigate all those risks.
 
 ## What it does
 
 Imagine a student gets distracted during class (it happens) and they navigate away from Zoom for an extended period of time. Now what happens next is our app detects this event and tells the automated webcam cover to close in order to prevent any risk of an embarrassing event while distracted. Not to mention many students already have privacy covers for their cameras that they control manually, this just does that with some added features.
 
 
-There are 3 modes that our webcam cover can run in:
+There are 3 modes that our webcam cover can run in through our GUI:
 
  - Manual Mode
-	 - Users can close and open in the GUI of the app
+	 - Users can close and open the webcame
  - Automated Mode
 	 - Our app tracks when the user leaves Zoom for an extended period of time and closes the camera
 	 - Whenever this event is triggered, an SMS and Mac notifications are sent in order to inform the user if they are away from their computer
+ - Scheduler Mode
+	 - Many users would rather only have their camera being open when they need to during class in case of a threat of being hacked, so this mode pulls course information from the student's schedule in order to only have their camera visible when class is in session
+	 - When the user has class the webcam is shown, and when there is no class, it is hidden by default for privacy reasons
 
 ## How we built it
 
@@ -34,7 +38,7 @@ The main hurdle for me with this project was my inexperience with using any type
 
 ## Accomplishments that we're proud of
 
-I was very surprised to learn how useful Arduino-controlled servos can be for projects like this. I am pretty proud of creating a working webcam cover that really does satisfy the anxiety of many students like myself when having a camera on in our private homes. Also, being able to notify 
+I was very surprised to learn how useful Arduino-controlled servos can be for projects like this. I am pretty proud of creating a working webcam cover that really does satisfy the anxiety of many students like myself when having a camera on in our private homes. Also, being able to notify people have these changes can be very helpful for those of us that are rather forgetful.
 
 ## What we learned
 
@@ -42,4 +46,4 @@ I learned a great amount about controlling servos and hardware as well as many n
 
 ## What's next for Zoom Saver
 
-I plan to add more features that can be more useful for students in the time of Zoom University, like detecting when you've gone away from the camera, movement detection, and more.
+I plan to add more features that can be more useful for students in the time of Zoom University, like detecting when you've gone away from the camera, other movement detection, and more.
